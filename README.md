@@ -17,7 +17,52 @@
 # Table of Content
 
 
-[[toc]]
+Managing your APIs with IBM API Connect
+Table of Content
+1. API Connect Overview
+- Components in API Connect
+- Terminology
+- Architecture
+- Concept Map
+- Plans & Products
+- Product LifeCycle
+2. Objectives
+3. Prerequisites
+- Task 1 : Sign in to IBM Cloud
+- Task 2 : Fill in the form
+- Task 3 : Confirm your registration to IBM Cloud from you email application
+4. Setup API Connect in IBM Cloud
+- Task 4 : Login to IBM Cloud
+- Task 5 : Access the Catalog
+- Task 6 : Find API Connect
+- Task 7 : Review the service instance
+- Task 8 : Create the API Connect instance
+- Task 9 : Learn the different parts of the screen
+- Task 10 : Get access to the Sandbox catalog
+- Task 11 : Instanciate the Developer Portal
+5 - Expose an existing REST API
+- Task 12 : Download the API swagger source to your laptop
+- Task 13 : Create a Product
+- Task 14 : Create (import) the API
+- Task 15 : Modify the definitions of the API
+- Task 16 : Testing the new created API
+- Task 17 : Exploring the API
+6. Publish your API to the Sandbox catalog
+- Task 18 : Stage the API in the Sandbox Catalog
+- Task 19 : Publish your API
+7. Consumer Experience
+- Task 20 : Accessing the Developer Portal
+- Task 21 : Sign in as a Developer Portal
+- Task 22 : Defining a Mobile Applocation
+- Task 23 : Subscribe to a Plan for our Product
+- Task 24 : Test QuoteMgmt APIs from the Developer Portal
+- Task 25 : Test QuoteMgmt APIs from the Command Line
+8. APIs Analytics
+- Task 26 : Accessing the Analytics Dashboard
+- Task 27 : Customizing the Dashboard
+9. Conclusion
+Results
+End of Lab
 
 +++
 
