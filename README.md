@@ -16,50 +16,49 @@
 
 # Table of Content
 
-
 Managing your APIs with IBM API Connect
 Table of Content
 1. API Connect Overview
-- Components in API Connect
-- Terminology
-- Architecture
-- Concept Map
-- Plans & Products
-- Product LifeCycle
+Components in API Connect
+Terminology
+Architecture
+Concept Map
+Plans & Products
+Product LifeCycle
 2. Objectives
 3. Prerequisites
-- Task 1 : Sign in to IBM Cloud
-- Task 2 : Fill in the form
-- Task 3 : Confirm your registration to IBM Cloud from you email application
+Task 1 : Sign in to IBM Cloud
+Task 2 : Fill in the form
+Task 3 : Confirm your registration to IBM Cloud from you email application
 4. Setup API Connect in IBM Cloud
-- Task 4 : Login to IBM Cloud
-- Task 5 : Access the Catalog
-- Task 6 : Find API Connect
-- Task 7 : Review the service instance
-- Task 8 : Create the API Connect instance
-- Task 9 : Learn the different parts of the screen
-- Task 10 : Get access to the Sandbox catalog
-- Task 11 : Instanciate the Developer Portal
+Task 4 : Login to IBM Cloud
+Task 5 : Access the Catalog
+Task 6 : Find API Connect
+Task 7 : Review the service instance
+Task 8 : Create the API Connect instance
+Task 9 : Learn the different parts of the screen
+Task 10 : Get access to the Sandbox catalog
+Task 11 : Instanciate the Developer Portal
 5 - Expose an existing REST API
-- Task 12 : Download the API swagger source to your laptop
-- Task 13 : Create a Product
-- Task 14 : Create (import) the API
-- Task 15 : Modify the definitions of the API
-- Task 16 : Testing the new created API
-- Task 17 : Exploring the API
+Task 12 : Download the API swagger source to your laptop
+Task 13 : Create a Product
+Task 14 : Create (import) the API
+Task 15 : Modify the definitions of the API
+Task 16 : Testing the new created API
+Task 17 : Exploring the API
 6. Publish your API to the Sandbox catalog
-- Task 18 : Stage the API in the Sandbox Catalog
-- Task 19 : Publish your API
+Task 18 : Stage the API in the Sandbox Catalog
+Task 19 : Publish your API
 7. Consumer Experience
-- Task 20 : Accessing the Developer Portal
-- Task 21 : Sign in as a Developer Portal
-- Task 22 : Defining a Mobile Applocation
-- Task 23 : Subscribe to a Plan for our Product
-- Task 24 : Test QuoteMgmt APIs from the Developer Portal
-- Task 25 : Test QuoteMgmt APIs from the Command Line
+Task 20 : Accessing the Developer Portal
+Task 21 : Sign in as a Developer Portal
+Task 22 : Defining a Mobile Applocation
+Task 23 : Subscribe to a Plan for our Product
+Task 24 : Test QuoteMgmt APIs from the Developer Portal
+Task 25 : Test QuoteMgmt APIs from the Command Line
 8. APIs Analytics
-- Task 26 : Accessing the Analytics Dashboard
-- Task 27 : Customizing the Dashboard
+Task 26 : Accessing the Analytics Dashboard
+Task 27 : Customizing the Dashboard
 9. Conclusion
 Results
 End of Lab
@@ -90,16 +89,16 @@ Find below a list of the main components in API Connect :
 - **API Connect Cloud** : not to be confused with a cloud infrastructure/platform, it is a combination of gateways clusters, managers cluster, portal clusters and loopback applications runtimes. Usually a customer will have one, two, sometime three or more API Connect clouds, based on its organization and needs to separate the infrastructures.
 - **Assembly** panel : this is where we specify the policies to be executed in the gateway for each transactions.
 
-### Architecture 
+### Architecture
 
-IBM API Connect can work on Premises or in a Cloud. 
+IBM API Connect can work on Premises or in a Cloud.
 Find below the architecture details of the solution in the IBM Cloud that we are going to use during this labs :
 
 ![API Connect Architecture in the Cloud](./images/i091.png)
 
 ### Concept Map
 
-We often speak about an API Connect **Cloud** which represents an instantiation of all the components of API Connect. The following diagram describes all the relationships between all the components. 
+We often speak about an API Connect **Cloud** which represents an instantiation of all the components of API Connect. The following diagram describes all the relationships between all the components.
 ![API Connect Components](./images/i092.png)
 
 ### Plans & Products
@@ -110,7 +109,7 @@ To make an API available to a customer, it must be included in a **Plan**. Plans
 
 Plans and APIs are grouped in Products. Through Products, you can manage the availability and visibility of APIs and Plans. Use the API Designer to create, edit, and stage your Product. Use the API Manager to manage the lifecycle of your Product.
 
-The following diagram demonstrates how Products, Plans, and APIs relate to one another. Note how Plans belong to only one Product, can possess different APIs to other Plans within the same Product, and can share APIs with Plans from any Product. Figure to show the hierarchy of Products, Plans, and APIs. 
+The following diagram demonstrates how Products, Plans, and APIs relate to one another. Note how Plans belong to only one Product, can possess different APIs to other Plans within the same Product, and can share APIs with Plans from any Product. Figure to show the hierarchy of Products, Plans, and APIs.
 
 ![Products-Plans-APIs](./images/i094.png)
 
@@ -124,7 +123,7 @@ When you manage your Product versions, you move them through a series of lifecyc
 # 2. Objectives
 
 
-In this workshop, you will use **API Connect** to define a simple REST API and an API Product in your private instance of API Connect in the **IBM Cloud**. This API is providing a **quote for a loan request**. The back-end application has already been implemented somewhere in the IBM Cloud thru Java code. 
+In this workshop, you will use **API Connect** to define a simple REST API and an API Product in your private instance of API Connect in the **IBM Cloud**. This API is providing a **quote for a loan request**. The back-end application has already been implemented somewhere in the IBM Cloud thru Java code.
 
 ![Quote API](./images/i001a.png)
 
@@ -138,7 +137,7 @@ You will learn:
 - How to subscribe to an API previously published and test in the Developer Portal (Lab)
 - How to manage security and analytics about APIs (Lab)
 
- 
+
 # 3. Prerequisites
 
 This lab is running on the **IBM Cloud** (ex Bluemix).
@@ -158,9 +157,9 @@ Open this link  [IBM Cloud](http://bluemix.net)
 
 ### Task 2 : Fill in the form
 Specify last name, first name, corp, country, phone number and password.
-> By **default**, all new people that register to IBM Cloud will have an **Lite Account** with **no time restriction**. This is not a 30 day trial account. 
+> By **default**, all new people that register to IBM Cloud will have an **Lite Account** with **no time restriction**. This is not a 30 day trial account.
 
-Click on **Create Account** button. 
+Click on **Create Account** button.
 ![Register to IBM Cloud](./images/a002.png)
 
 ![Thanks](./images/a003.png)
@@ -174,7 +173,7 @@ Log in to IBM Cloud with your credentials :
 
 ![Success Sign up](./images/a005.png)
 
-> Once connected to IBM Cloud, you will notice that you are directed automatically to the closest region (UK for our case). IBM Cloud also create an org (your email) and a space (dev) by default. 
+> Once connected to IBM Cloud, you will notice that you are directed automatically to the closest region (UK for our case). IBM Cloud also create an org (your email) and a space (dev) by default.
 
 
 ![Bluemix Dashboard](./images/a006.png)
@@ -226,10 +225,13 @@ API Connect is using a concept of "Catalog of products" to group a set of produc
 
 ### Task 11 : Instanciate the Developer Portal
 Each catalog has its own components and propose a developer portal.
-Click on **Settings**, then on **Portal** and finally choose **Developer Portal**.  Follow the 3 steps (1,2 and 3 in red).
+Click on **Settings**, then on **Portal** and finally choose **Developer Portal**.  Follow the 4 steps (1,2, 3 and 4 in red).
 > Note that a yellow message will appear to indicate that your request is in process. You will normally receive a message later on your email indicating that the Developer Portal is ready to use. We will customize a standard access to the portal later in this lab.
 
 ![Portal Configuration](./images/i010.png)
+
+**IMPORTANT**
+> Save the configuration by clicking on the diskette.
 
 We are now to ready to create, run and manage APIs in security.
 
@@ -242,24 +244,24 @@ In this lab, we are going to use the IBM Cloud to implement the API and the Deve
 > Note: Using the Developer Toolkit (locally) or using API Connect manager directly (remote server) is a pretty important decision. Using the toolkit allows to use a Source Control Management System and perform micro versioning as well as backup of the various yaml (and wsdl). It also provides a local experience with a very low response time. Using the Manager simplifies sharing the API Drafts. In reality, there are ways to benefit of both approaches.
 
 ### Task 12 :  Download the API swagger source to your laptop
-Follow this link to download the source definition of the API. 
+Follow this link to download the source definition of the API.
 
 [Link Here](https://github.com/phthom/Using-IBM-API-Connect/blob/master/QuoteManagementAPI_AW_S.yaml)
 
-or 
+or
 
 https://github.com/phthom/Using-IBM-API-Connect/blob/master/QuoteManagementAPI_AW_S.yaml
 
 ### Task 13 :  Create a Product
 Depending where you are in the API Connect console, Click on the chevrons (**>>**) to get access to the navigation menu on the left side.
 
-Choose **Drafts** to implement the product. 
+Choose **Drafts** to implement the product.
 
 ![Draft](./images/i011a.png)
 
 ![Draft](./images/i011.png)
 
-Click the **Add** button, select **New product**. 
+Click the **Add** button, select **New product**.
 
 ![Add New Product](./images/i012.png)
 
@@ -290,7 +292,7 @@ Specify the location of the Swagger file you just downloaded. Click **Import**.
 We need to complete/review a few informations, that were not specified in the generated Swagger. The amount of information that need to be completed will depend greatly on the use of the annotations or the Swagger generator used.
 
 Click on **Design** in the top menu.  
-Select https for the scheme, in the Schemes section. 
+Select https for the scheme, in the Schemes section.
 ![Design the API](./images/i018.png)
 
 Create the security definition, click on + sign close to the Security Definitions section.
@@ -309,8 +311,8 @@ Specify the security of the API, click on the + sign close to the Security secti
 
 ![Security](./images/i023.png)
 
-Create a property to define the target-url of the back end API. This allows us to create a variable that may take different values based on the catalog instance. Click on the + sign close to the Properties section. Set the Property name to **target-url**, and enter 
-http://SampleJAXRS20-aw.eu-gb.mybluemix.net in the value, close to Default value. 
+Create a property to define the target-url of the back end API. This allows us to create a variable that may take different values based on the catalog instance. Click on the + sign close to the Properties section. Set the Property name to **target-url**, and enter
+http://SampleJAXRS20-aw.eu-gb.mybluemix.net in the value, close to Default value.
 
 ![Properties](./images/i025.png)
 
@@ -327,12 +329,25 @@ Save the change. Click on the **read icon**, check the catalog to run the API, s
 
 ![Assembly](./images/i032.png)
 
-Select the operation : **get /extQuote** 
-> Don't click on the other buttons. 
+Because we didn't associate this API to any Product, if we want to live test the API, we have to change the setup for the test. Click on **Change Setup**
+
+![Test Assembly](./images/i032a.png)
+
+Specify a testing product name like **QuoteTestingProduct** and click on **Create and publish** :
+
+![Test Assembly](./images/i032b.png)
+
+Then Click **Next**
+
+Select the operation : **get /extQuote**
+> Don't click on the other buttons.
+>
+> Notice the change at the top : QuoteTestingProduct 1.0.0
+
 
 ![Test Assembly](./images/i050.png)
 
-Enter the parameters (amount 1000, rate 1.1, duration 36, delay 10, msg length 11) and click invoke. 
+Enter the parameters (amount 1000, rate 1.1, duration 36, delay 10, msg length 11) and click invoke.
 > Don't change the generated Client ID.
 
 ![Test Assembly](./images/i052.png)
@@ -343,7 +358,7 @@ Here is a example of the answer :
 
 ### Task 17 :  Exploring the API
 
-You can also test the API using the explore facility. You get a view similar to the API consumer in the portal, but in this case you do not need to create an Apps and subscribe to the API. Click on the **Explore** link on the top right, you see the documentation and have the possibility to test the various operations. 
+You can also test the API using the explore facility. You get a view similar to the API consumer in the portal, but in this case you do not need to create an Apps and subscribe to the API. Click on the **Explore** link on the top right, you see the documentation and have the possibility to test the various operations.
 
 Click on the **Sandbox** link :
 
@@ -371,16 +386,19 @@ Within the Draft area, select the **QuoteMgmt** product :
 
 ![Stage](./images/i057.png)
 
-In the APIs Section, add the **Quote API**, then **Apply** and click on the **Save** icon :
+In the APIs Section, add the **Quote API**, then **Apply** :
 
-![Stage](./images/i059.png)
+![Stage](./images/i058a.png)
 
-Click on **Publish icon** (cloud shape) in the top right corner, select Sandbox. This does effectively stage the product in the **Sandbox** catalog. The product is not yet published to the Portal. 
+![Stage](./images/i058b.png)
+
+Click on the **Save** icon.
+
+Click on **Publish icon** (cloud shape) in the top right corner, select Sandbox. This does effectively **stage** the product in the **Sandbox** catalog. The product is not yet fully published to the Portal.
 
 ![Publish](./images/i058.png)
 
-
-### Task 19 : Publish your API 
+### Task 19 : Publish your API
 
 Click on the chevron (>>) and get access to the Dashboard, then click on the Sandbox tile :
 
@@ -394,7 +412,7 @@ Click on the dots link and select Publish :
 
 ![Publish](./images/i062.png)
 
-Check the visibility and click on **Publish button**. 
+Check the visibility and click on **Publish button**.
 
 ![Visibility](./images/i063.png)
 
@@ -423,7 +441,7 @@ You can now explore the API and Products (without login) :
 
 ### Task 21 : Sign in as a Developer Portal
 
-From the Developer Portal, click on **Login**, create an account, then enter **your account information** for the developer account. **This must be a different email address than your IBM Cloud account**.  You can create a **email account** on mail.com for example. 
+From the Developer Portal, click on **Login**, create an account, then enter **your account information** for the developer account. **This must be a different email address than your IBM Cloud account**.  You can create a **email account** on mail.com for example.
 
 ![Account Information](./images/i073.png)
 
@@ -495,7 +513,7 @@ Scroll down below the Call operation button. You should see a **200 OK** and a *
 ### Task 25 : Test QuoteMgmt APIs from the Command Line
 
 
-It is now time to test our API from the command line. 
+It is now time to test our API from the command line.
 From the previous cURL screen, Copy the cURL example from the left side into your text editor window replacing REPLACE_WITH_CLIENT_ID and REPLACE_WITH_CLIENT_SECRET with your client id and your client secret saved from the prior step
 
 ```
@@ -506,7 +524,7 @@ curl --request GET \
   --header 'x-ibm-client-secret: REPLACE_WITH_CLIENT_SECRET'
  ```
 
-You may have to add the client secret parameter. 
+You may have to add the client secret parameter.
 
 Copy and try it into your terminal windows.
 Here is the result in a command line :
@@ -516,7 +534,7 @@ Here is the result in a command line :
 
 # 8. APIs Analytics
 
-It is very important to get some analytics from the API Gateway when you want to follow errors, response time and hundreds of metrics from the your APIs, Catalogs, Products ... 
+It is very important to get some analytics from the API Gateway when you want to follow errors, response time and hundreds of metrics from the your APIs, Catalogs, Products ...
 
 
 ### Task 26 : Accessing the Analytics Dashboard
@@ -542,11 +560,11 @@ You can scroll down the analytics page. On the top right part of the page, there
 ![Visuatizations](./images/i088.png)
 
 This will bring a list of some of the standard visualizations. You can then type in a string to filter through visualizations or use the arrows to page through the list.
-Add the **Average Response Time** visualization to the dashboard by simply clicking on it. The new visualization will be added to the bottom of our dashboard. 
+Add the **Average Response Time** visualization to the dashboard by simply clicking on it. The new visualization will be added to the bottom of our dashboard.
 
 ![Visuatizations](./images/i089.png)
 
-The new visualization will be added to the bottom of our analytic dashboard. 
+The new visualization will be added to the bottom of our analytic dashboard.
 
 ![Dashboard Customization](./images/i090.png)
 
