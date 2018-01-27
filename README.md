@@ -150,7 +150,7 @@ Here are some helpful steps :
 
 ### Task 1 : Sign in to IBM Cloud
 If you don't have already registered to **IBM Cloud**,  
-Open this link  [IBM Cloud](http://bluemix.net)
+Open this link  [IBM Cloud](http://bluemix.net) or type http://bluemix.net in your favorite internet browser.
 
 
 ![Create your Lite Account](./images/a001.png)
@@ -239,7 +239,7 @@ We are now to ready to create, run and manage APIs in security.
 
 In this first step, we assume that a developer of an API is providing you the Swagger source associated with that API. The developer is using WAS Liberty as the runtime and he also uses JAX-RS annotations along api discovery feature. This allows him to get a Swagger easily consumed by API Connect.
 
-In this lab, we are going to use the IBM Cloud to implement the API and the Developer Toolkit (in another lab).
+In this lab, we are going to use the IBM Cloud to implement the API but we can also use the Developer Toolkit (in another lab).
 
 > Note: Using the Developer Toolkit (locally) or using API Connect manager directly (remote server) is a pretty important decision. Using the toolkit allows to use a Source Control Management System and perform micro versioning as well as backup of the various yaml (and wsdl). It also provides a local experience with a very low response time. Using the Manager simplifies sharing the API Drafts. In reality, there are ways to benefit of both approaches.
 
@@ -394,6 +394,8 @@ In the APIs Section, add the **Quote API**, then **Apply** :
 
 Click on the **Save** icon.
 
+![Stage](./images/i058c.png)
+
 Click on **Publish icon** (cloud shape) in the top right corner, select Sandbox. This does effectively **stage** the product in the **Sandbox** catalog. The product is not yet fully published to the Portal.
 
 ![Publish](./images/i058.png)
@@ -420,7 +422,7 @@ Your QuoteMgmt Product is now visible in Developer Portal.
 
 # 7. Consumer Experience
 
-In this step, you will learn the consumer experience for APIs that have been exposed to your developer organization. You login as a developer to register your application and then subscribe to the product just published and then test the API included in the product.
+In this step, you will learn about the consumer experience for the APIs that have been exposed to your developer organization. You login as a developer to register your application and then subscribe to the product just published and then test the API included in the product.
 
 
 
@@ -439,7 +441,7 @@ You can now explore the API and Products (without login) :
 ![My API published in Portal](./images/i072.png)
 
 
-### Task 21 : Sign in as a Developer Portal
+### Task 21 : Sign in as a Developer
 
 From the Developer Portal, click on **Login**, create an account, then enter **your account information** for the developer account. **This must be a different email address than your IBM Cloud account**.  You can create a **email account** on mail.com for example.
 
