@@ -515,18 +515,15 @@ Scroll down below the Call operation button. You should see a **200 OK** and a *
 ### Task 25 : Test QuoteMgmt APIs from the Command Line
 
 
-It is now time to test our API from the command line.
-From the previous cURL screen, Copy the cURL example from the left side into your text editor window replacing REPLACE_WITH_CLIENT_ID and REPLACE_WITH_CLIENT_SECRET with your client id and your client secret saved from the prior step
+It is now time to test our API from the command line. 
+From the previous cURL screen, **Copy the cURL example from the left side** into your text editor window replacing REPLACE_WITH_CLIENT_ID and REPLACE_WITH_CLIENT_SECRET with your client id and your client secret saved from the prior step :
 
 ```
-curl --request GET \
-  --url 'https://api.eu.apiconnect.ibmcloud.com/philmetalmailcom-dev/sb/loanmgt/resources/loans/v1/extQuote?loanAmount=10000&annualInterestRate=1.1&termInMonths=36&delay=10&msgLength=725' \
-  --header 'accept: application/json' \
   --header 'x-ibm-client-id: REPLACE_WITH_CLIENT_ID' \
   --header 'x-ibm-client-secret: REPLACE_WITH_CLIENT_SECRET'
  ```
 
-You may have to add the client secret parameter.
+**IMPORTANT : You may have to add the client secret parameter.** 
 
 Copy and try it into your terminal windows.
 Here is the result in a command line :
